@@ -1,0 +1,12 @@
+[package]
+name = "bell-server"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+regex = "1"
+md5 = "0"
+log = "0"
+serialport = "4"
+pretty_env_logger = "0"
+clap = { version = "3", features = ["cargo", "env"] }

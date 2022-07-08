@@ -1,0 +1,10 @@
+version: "3.9"
+services:
+  klingel:
+    build: .
+    devices:
+    - "/dev/ttyUSB0:/dev/ttyUSB0"
+    restart: on-failure
+    env_file:
+      - bell.env
+
